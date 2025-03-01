@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechLootDeals - Best Tech Deals Of Amazon</title>
+  <meta name="description" content="Discover top tech deals of amazon. Shop the best gadgets, electronics, and accessories at unbeatable prices." />
+  <meta name="keywords" content="tech deals, loot, affiliate marketing, Amazon deals, gadgets, electronics, discounts" />
+  <meta name="author" content="TechLootDeals" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="TechLootDeals - Best Tech Deals in India" />
+  <meta property="og:description" content="Discover top tech deals in Rupees. Shop the best gadgets, electronics, and accessories at unbeatable prices." />
+  <meta property="og:image" content="images/techlootdeals-logo.png" />
+  <meta property="og:url" content="https://your-github-username.github.io/TechLootDeals/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TechLootDeals - Best Tech Deals in Rupees" />
+  <meta name="twitter:description" content="Discover top tech deals in Rupees. Shop the best gadgets, electronics, and accessories at unbeatable prices." />
+  <meta name="twitter:image" content="images/techlootdeals-logo.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo-container">
+      <img src="images/techlootdeals-logo.png" alt="TechLootDeals Logo" class="logo" />
+      <h1 class="site-title">TechLootDeals</h1>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#amazon-deals">Amazon Deals</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Find the Best Tech Deals At Lowest Price Of Amazon..</h2>
+      <p>Explore over 30 handpicked tech products with unbeatable discounts loots!</p>
+      <a href="#products" class="cta-button">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products-section">
+    <h2>Featured Products</h2>
+    <div class="products-grid" id="products-grid">
+      <!-- Product cards will be injected here by JavaScript -->
+    </div>
+  </section>
+
+  <!-- Amazon Deals Section -->
+  <section id="amazon-deals" class="amazon-section">
+    <h2>Amazon Affiliate Deals</h2>
+    <p>Check out the latest deals on Amazon:</p>
+    <a href="https://your-github-username.github.io/amazon-affiliate-section" target="_blank" class="amazon-link">Visit Amazon Deals</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2>About TechLootDeals</h2>
+    <p>
+      TechLootDeals curates the best tech deals for you. We bring you a variety of gadgets, electronics, and accessories at unbeatable prices in Rupees. Our team carefully selects each product to ensure quality and value.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Have questions or need support? Get in touch with us.</p>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> TechLootDeals. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+  <script>
+    // Auto-update copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
