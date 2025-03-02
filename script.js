@@ -1,5 +1,5 @@
 // Initialize EmailJS with your public key
-emailjs.init("zTSoGecZmVj7wc-D6");
+emailjs.init("91SS_E_tD7Npha6kk");
 
 // List of 30 trending Amazon products with price matched details
 const trendingProducts = [
