@@ -28,19 +28,32 @@
   <link rel="stylesheet" href="styles.css" />
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
-  <!-- Mobile Header Fix & Nav Slide-Up Animation -->
+  <!-- Mobile Header & Nav Toggle CSS -->
   <style>
+    /* For mobile devices, remove fixed header behavior */
     @media (max-width: 768px) {
       .header {
         position: relative !important;
       }
-      .nav.slide-up {
-        animation: slideUp 0.5s forwards;
+      /* Position nav absolutely so it overlays content when visible */
+      .nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff; /* Adjust background as needed */
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+        z-index: 10;
       }
-    }
-    @keyframes slideUp {
-      from { transform: translateY(0); opacity: 1; }
-      to { transform: translateY(-100%); opacity: 0; }
+      /* Hidden state: slide nav up and remove interaction */
+      .nav.hidden {
+        transform: translateY(-100%);
+        opacity: 0;
+        pointer-events: none;
+      }
     }
   </style>
 </head>
@@ -48,7 +61,8 @@
   <!-- Header -->
   <header class="header">
     <div class="logo-container">
-      <img src="logo.png" alt="TechLootDeals Logo" class="logo" />
+      <!-- Clicking the logo will toggle the mobile navigation -->
+      <img src="logo.png" alt="TechLootDeals Logo" class="logo" style="cursor:pointer;" />
       <h1 class="site-title">TechLootDeals</h1>
     </div>
     <nav class="nav">
@@ -151,10 +165,11 @@ P.S. Missed yesterday's ₹899 wireless earbuds deal? Browse current Amazon loot
     // Auto-update copyright year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // On mobile (Android or narrow screens), clicking the logo triggers nav slide-up animation.
+    // Toggle the navigation menu on mobile when the logo is clicked
     document.querySelector('.logo').addEventListener('click', function() {
+      // Only apply toggle on Android devices or on screens <= 768px wide
       if (navigator.userAgent.toLowerCase().indexOf("android") > -1 || window.innerWidth <= 768) {
-        document.querySelector('.nav').classList.add('slide-up');
+        document.querySelector('.nav').classList.toggle('hidden');
       }
     });
   </script>
