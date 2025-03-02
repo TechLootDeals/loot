@@ -323,7 +323,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const flipkartLink = `https://www.flipkart.com/search?q=${encodeURIComponent(product.name)}`;
 
       // Send an email via EmailJS with product details to your Gmail address
-      emailjs.send("service_ivjzddf", "template_x3lui7j", {
+      emailjs.send("service_k81t8so", "template_mqetqd8", {
         productName: product.name,
         productPrice: product.price,
         productLink: flipkartLink,
