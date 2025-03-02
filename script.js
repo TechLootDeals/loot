@@ -6,7 +6,7 @@ const trendingProducts = [
     description: "Experience high-quality sound with these top-rated wireless earbuds.",
     price: "1,299",
     image: "Screenshot 2025-03-01 18.28.42.png",
-    link: ""
+    link: "https://amzn.to/4ijCvgN"
   },
   {
     id: 2,
@@ -14,7 +14,7 @@ const trendingProducts = [
     description: "Immerse yourself in music with advanced noise cancellation.",
     price: "3,499",
     image: "Screenshot 2025-03-01 18.37.02.png",
-    link: ""
+    link: "https://amzn.to/4bFgnvz"
   },
   {
     id: 3,
@@ -22,7 +22,7 @@ const trendingProducts = [
     description: "lowest price as a wristphone to monitor your health with this stylish android smart watch.",
     price: "4,999",
     image: "Screenshot 2025-03-01 18.38.49.png",
-    link: ""
+    link: "https://amzn.to/4bsUwXR"
   },
   {
     id: 4,
@@ -30,7 +30,7 @@ const trendingProducts = [
     description: "Portable Bluetooth speaker with powerful sound and deep bass.",
     price: "2,299",
     image: "Screenshot 2025-03-01 18.41.17.png",
-    link: ""
+    link: "https://amzn.to/41zmjm9"
   },
   {
     id: 5,
@@ -38,7 +38,7 @@ const trendingProducts = [
     description: "High-capacity portable charger to keep your devices powered on the go.",
     price: "1,499",
     image: "Screenshot 2025-03-01 18.44.12.png",
-    link: ""
+    link: "https://amzn.to/4bmyLZE"
   },
   {
     id: 6,
@@ -164,9 +164,9 @@ const trendingProducts = [
     id: 21,
     name: "Smart Home Assistant",
     description: "Control your home with voice commands using this smart assistant.",
-    price: "3,299",
+    price: "3,999",
     image: "Screenshot 2025-03-01 19.17.59.png",
-    link: "https://amzn.to/3XpGEYHg"
+    link: "https://amzn.to/4h7MuVJ"
   },
   {
     id: 22,
@@ -180,9 +180,9 @@ const trendingProducts = [
     id: 23,
     name: "SSD External Drive",
     description: "Fast and reliable external SSD for all your data storage needs.",
-    price: "5,499",
+    price: "7,999",
     image: "Screenshot 2025-03-01 20.05.26.png",
-    link: "https://www.amazon.in/dp/B07JKL5678/?tag=youraffiliatetag"
+    link: "https://amzn.to/41E74sc"
   },
   {
     id: 24,
