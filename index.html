@@ -26,7 +26,16 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css" />
- <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+  <!-- Mobile Header Fix: Remove fixed positioning on mobile devices -->
+  <style>
+    @media (max-width: 768px) {
+      .header {
+        position: relative !important;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- Header -->
@@ -50,7 +59,7 @@
     <div class="hero-content">
       <h2>Find the Best Tech Deals At Lowest Price Of Amazon..</h2>
       <p>Explore over 30 handpicked tech products with unbeatable discounts loot deals!</p>
-      <p>"Exclusive Limited-Time Offer🔥! Secure this unbeatable deal NOW—only available here with 10% off!🔥"<p>
+      <p>"Exclusive Limited-Time Offer🔥! Secure this unbeatable deal NOW—only available here with 10% off!🔥"</p>
       <a href="#products" class="cta-button">Shop Now</a>
     </div>
   </section>
