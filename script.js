@@ -1,3 +1,6 @@
+// Initialize EmailJS with your public key
+emailjs.init("zTSoGecZmVj7wc-D6");
+
 // List of 30 trending Amazon products with price matched details
 const trendingProducts = [
   {
@@ -322,12 +325,11 @@ document.addEventListener('DOMContentLoaded', () => {
       // Construct a Flipkart affiliate link (using a search URL as an example)
       const flipkartLink = `https://www.flipkart.com/search?q=${encodeURIComponent(product.name)}`;
 
-      // Send an email via EmailJS with product details to your Gmail address
-      emailjs.send("service_k81t8so", "template_mqetqd8", {
+      // Send an email via EmailJS with product details
+      emailjs.send("service_k81t8so", "template_f5ym7ca", {
         productName: product.name,
         productPrice: product.price,
-        productLink: flipkartLink,
-        to_email: "mitasaha182@gmail.com" // Replace with your actual Gmail address
+        productLink: flipkartLink
       }).then(function (response) {
         console.log('SUCCESS!', response.status, response.text);
         window.open(flipkartLink, "_blank");
