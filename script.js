@@ -6,7 +6,7 @@ const trendingProducts = [
     description: "Experience high-quality sound with these top-rated wireless earbuds.",
     price: "1,299",
     image: "Screenshot 2025-03-01 18.28.42.png",
-    link: "https://www.amazon.in/dp/B07XYZ1234/?tag=youraffiliatetag"
+    link: "https://amzn.to/4bs1NYa"
   },
   {
     id: 2,
@@ -14,7 +14,7 @@ const trendingProducts = [
     description: "Immerse yourself in music with advanced noise cancellation.",
     price: "3,499",
     image: "Screenshot 2025-03-01 18.37.02.png",
-    link: "https://www.amazon.in/dp/B08ABC5678/?tag=youraffiliatetag"
+    link: "https://amzn.to/4koT6la"
   },
   {
     id: 3,
@@ -22,7 +22,7 @@ const trendingProducts = [
     description: "lowest price as a wristphone to monitor your health with this stylish android smart watch.",
     price: "4,999",
     image: "Screenshot 2025-03-01 18.38.49.png",
-    link: "https://www.amazon.in/dp/B09DEF9012/?tag=youraffiliatetag"
+    link: "https://amzn.to/3QE9Bwn"
   },
   {
     id: 4,
@@ -30,7 +30,7 @@ const trendingProducts = [
     description: "Portable Bluetooth speaker with powerful sound and deep bass.",
     price: "2,299",
     image: "Screenshot 2025-03-01 18.41.17.png",
-    link: "https://www.amazon.in/dp/B08GHI3456/?tag=youraffiliatetag"
+    link: "https://amzn.to/41BsOoB"
   },
   {
     id: 5,
@@ -44,33 +44,33 @@ const trendingProducts = [
     id: 6,
     name: "Laptop Backpack",
     description: "Sleek and durable backpack designed for tech enthusiasts.",
-    price: "1,999",
+    price: "1,799",
     image: "Screenshot 2025-03-01 18.47.02.png",
-    link: "https://www.amazon.in/dp/B08MNO1234/?tag=youraffiliatetag"
+    link: "https://amzn.to/4brfK8M
   },
   {
     id: 7,
     name: "USB-C Hub",
     description: "Expand your connectivity with this versatile USB-C hub.",
-    price: "1,799",
+    price: "1,499",
     image: "Screenshot 2025-03-01 18.50.04.png",
-    link: "https://www.amazon.in/dp/B08PQR5678/?tag=youraffiliatetag"
+    link: "https://amzn.to/41EqsFq"
   },
   {
     id: 8,
     name: "Wireless Mouse",
     description: "Smooth and responsive wireless mouse for everyday tasks.",
-    price: "999",
+    price: "699",
     image: "Screenshot 2025-03-01 18.51.34.png",
-    link: "https://www.amazon.in/dp/B07STU9012/?tag=youraffiliatetag"
+    link: "https://amzn.to/4ijVtnJ"
   },
   {
     id: 9,
     name: "Mechanical Keyboard",
     description: "Enjoy a superior typing experience with this mechanical keyboard.",
-    price: "3,199",
+    price: 2,599",
     image: "Screenshot 2025-03-01 18.54.09.png",
-    link: "https://www.amazon.in/dp/B08VWX3456/?tag=youraffiliatetag"
+    link: "https://amzn.to/3Xqe75k"
   },
   {
     id: 10,
@@ -78,87 +78,86 @@ const trendingProducts = [
     description: "Crystal clear video calls with this high-definition webcam.",
     price: "2,499",
     image: "Screenshot 2025-03-01 18.55.47.png",
-    link: "https://www.amazon.in/dp/B07YZ1234/?tag=youraffiliatetag"
+    link: "https://amzn.to/3QGhKjS"
   },
   {
     id: 11,
     name: "Gaming Monitor",
     description: "Elevate your gaming with a high-resolution, fast refresh rate monitor.",
-    price: "15,999",
+    price: "14,999",
     image: "Screenshot 2025-03-01 18.57.35.png",
-    link: "https://www.amazon.in/dp/B08ABC9012/?tag=youraffiliatetag"
+    link: "https://amzn.to/41CLgwY"
   },
   {
     id: 12,
     name: "Smart LED TV",
     description: "Enjoy vibrant colors and smart features with this LED TV.",
-    price: "24,999",
+    price: "25,999",
     image: "Screenshot 2025-03-01 19.16.37.png",
-    link: "https://www.amazon.in/dp/B09DEF3456/?tag=youraffiliatetag"
+    link: "https://amzn.to/41jEOK5"
   },
   {
     id: 13,
     name: "Latest Smartphone",
     description: "Stay ahead with the latest smartphone featuring cutting-edge technology.",
-    price: "29,999",
+    price: "25,999",
     image: "Screenshot 2025-03-01 19.41.43.png",
-    link: "https://www.amazon.in/dp/B08GHI7890/?tag=youraffiliatetag"
-  },
+    link: "https://amzn.to/4bqiUJz
   {
     id: 14,
     name: "Leather Bean Bag Combo",
     description: "Footrest & Cushion Combo, Filled with Beans",
-    price: "1,899",
+    price: "2,039",
     image: "Screenshot 2025-03-01 19.26.47.png",
-    link: "https://www.amazon.in/dp/B07JKL1234/?tag=youraffiliatetag"
+    link: "https://amzn.to/3DemASa"
   },
   {
     id: 15,
     name: "Home Security Camera",
     description: "Keep your home safe with this smart, easy-to-install security camera.",
-    price: "2,799",
+    price: "3,099",
     image: "Screenshot 2025-03-01 19.35.38.png",
-    link: "https://www.amazon.in/dp/B08MNO5678/?tag=youraffiliatetag"
+    link: "https://amzn.to/3D0D9kE"
   },
   {
     id: 16,
     name: "Camera Drone",
     description: "Capture stunning aerial footage with this easy-to-fly camera drone.",
-    price: "19,999",
+    price: "16,999",
     image: "Screenshot 2025-03-01 19.45.25.png",
-    link: "https://www.amazon.in/dp/B08PQR9012/?tag=youraffiliatetag"
+    link: "https://amzn.to/4ijcVIW"
   },
   {
     id: 17,
     name: "Electric Scooter",
     description: "Efficient and stylish electric scooter for hassle-free commuting.",
-    price: "34,999",
+    price: "26,999",
     image: "Screenshot 2025-03-01 19.52.42.png",
-    link: "https://www.amazon.in/dp/B07STU3456/?tag=youraffiliatetag"
+    link: "https://amzn.to/4imXBuY"
   },
   {
     id: 18,
     name: "VR Headset",
     description: "Immerse yourself in virtual worlds with this advanced VR headset.",
-    price: "14,999",
+    price: "8,999",
     image: "Screenshot 2025-03-01 19.55.31.png",
-    link: "https://www.amazon.in/dp/B08VWX7890/?tag=youraffiliatetag"
+    link: "https://amzn.to/3QJHZ93"
   },
   {
     id: 19,
     name: "Tablet",
     description: "Portable and powerful tablet ideal for work and play.",
-    price: "9,999",
+    price: "12,999",
     image: "Screenshot 2025-03-01 20.00.21.png",
-    link: "https://www.amazon.in/dp/B07YZ5678/?tag=youraffiliatetag"
+    link: "https://amzn.to/4gZW8K1"
   },
   {
     id: 20,
     name: "4K Action Camera",
     description: "Record adventures in stunning 4K resolution with this action camera.",
-    price: "7,499",
+    price: "6,499",
     image: "Screenshot 2025-03-01 20.02.00.png",
-    link: "https://www.amazon.in/dp/B08ABC3456/?tag=youraffiliatetag"
+    link: "https://amzn.to/3QFZy9X"
   },
   {
     id: 21,
@@ -166,7 +165,7 @@ const trendingProducts = [
     description: "Control your home with voice commands using this smart assistant.",
     price: "3,299",
     image: "Screenshot 2025-03-01 19.17.59.png",
-    link: "https://www.amazon.in/dp/B09DEF7890/?tag=youraffiliatetag"
+    link: "https://amzn.to/3XpGEYHg"
   },
   {
     id: 22,
@@ -174,7 +173,7 @@ const trendingProducts = [
     description: "Boost your internet speed with this high-performance wireless router.",
     price: "2,199",
     image: "Screenshot 2025-03-01 20.03.54.png",
-    link: "https://www.amazon.in/dp/B08GHI1234/?tag=youraffiliatetag"
+    link: "https://amzn.to/3FbCQE0"
   },
   {
     id: 23,
@@ -236,7 +235,7 @@ const trendingProducts = [
     description: "Step up your sneaker game with the Smashic Women's Sneakers from PUMA",
     price: "1,599",
     image: "Screenshot 2025-03-01 20.27.51.png",
-    link: "https://www.amazon.in/dp/B08ABC5678/?tag=youraffiliatetag"
+    link: "https://amzn.to/3Dn3ZTW"
   },
     {  id: 31,
     name: "Budget AC",
