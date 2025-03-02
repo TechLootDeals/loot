@@ -208,8 +208,52 @@ const trendingProducts = [
     image: "Screenshot 2025-03-01 20.08.50.png",
     link: "https://www.amazon.in/dp/B07STU9012/?tag=youraffiliatetag"
   },
-  {
+    {
     id: 27,
+    name: "Loom Solar Panel",
+    description: "Solar systems, DIY solar projects, and small solar setups for home and mobile charging.",
+    price: "3,499",
+    image: "Screenshot 2025-03-01 20.12.53.png",
+    link: "https://www.amazon.in/dp/B08ABC5678/?tag=youraffiliatetag"
+  },
+    {
+    id: 28,
+    name: "2 in 1 foldable fan",
+    description: "Brushless DC (BLDC) motor for powerful, yet ultra-quiet operation, making it ideal for any setting.",
+    price: "1,299",
+    image: "Screenshot 2025-03-01 20.14.11.png",
+    link: "https://www.amazon.in/dp/B08ABC5678/?tag=youraffiliatetag"
+  },
+   {  id: 29,
+    name: "Water Gun Toy",
+    description: "Perfect Pool Toy for Summer Fun! - Enjoy the summer and create long-lasting memories..",
+    price: "1,399",
+    image: "Screenshot 2025-03-01 20.21.22.png",
+    link: "https://www.amazon.in/dp/B08ABC5678/?tag=youraffiliatetag"
+  },
+     {  id: 30,
+    name: "Women's Sneaker",
+    description: "Step up your sneaker game with the Smashic Women's Sneakers from PUMA",
+    price: "1,599",
+    image: "Screenshot 2025-03-01 20.27.51.png",
+    link: "https://www.amazon.in/dp/B08ABC5678/?tag=youraffiliatetag"
+  },
+    {  id: 31,
+    name: "Budget AC",
+    description: "copper condenser coil with patented dnns self heal coating for low maintenance & enhanced durability",
+    price: "33,499",
+    image: "Screenshot 2025-03-02 09.29.06.png",
+    link: "https://www.amazon.in/dp/B08ABC5678/?tag=youraffiliatetag"
+  },
+    {  id: 32,
+    name: "Verbal Non Verbal Reasoning Book",
+    description: "verbal & non-verbal reasoning 47 videos, 1000+ solved examples",
+    price: "1,250",
+    image: "Screenshot 2025-03-01 19.50.50.png",
+    link: "https://www.amazon.in/dp/B08ABC5678/?tag=youraffiliatetag"
+  },
+  {
+    id: 33,
     name: "LED Desk Lamp",
     description: "Modern, energy-efficient LED desk lamp with adjustable brightness.",
     price: "1,799",
@@ -217,7 +261,7 @@ const trendingProducts = [
     link: "https://www.amazon.in/dp/B08VWX1234/?tag=youraffiliatetag"
   },
   {
-    id: 28,
+    id: 34,
     name: "Noise Cancelling Earbuds",
     description: "Compact earbuds featuring advanced noise cancellation technology.",
     price: "1,699",
@@ -225,7 +269,7 @@ const trendingProducts = [
     link: "https://www.amazon.in/dp/B07YZ9012/?tag=youraffiliatetag"
   },
   {
-    id: 29,
+    id: 35,
     name: "Portable Bluetooth Projector",
     description: "Enjoy movies anywhere with this portable Bluetooth projector.",
     price: "6,499",
@@ -233,7 +277,7 @@ const trendingProducts = [
     link: "https://www.amazon.in/dp/B08ABC7890/?tag=youraffiliatetag"
   },
   {
-    id: 30,
+    id: 36,
     name: "Smart Thermostat",
     description: "Save energy and keep your home comfortable with this smart thermostat.",
     price: "7,999",
