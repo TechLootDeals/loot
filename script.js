@@ -1,7 +1,4 @@
-// Initialize EmailJS with your public key
-emailjs.init("91SS_E_tD7Npha6kk");
-
-// List of 30 trending Amazon products with price matched details
+// List of 30+ trending Amazon products with price matched details
 const trendingProducts = [
   {
     id: 1,
@@ -298,15 +295,17 @@ function renderTrendingProducts() {
   trendingProducts.forEach(product => {
     const card = document.createElement('div');
     card.classList.add('product-card');
-    // For products with id > 23, add an extra Flipkart button
     card.innerHTML = `
       <img src="${product.image}" alt="${product.name}">
       <div class="product-info">
         <h3>${product.name}</h3>
         <p>${product.description}</p>
         <p class="price">₹${product.price}</p>
-        <a href="${product.link}" target="_blank" class="buy-button">Buy on Amazon</a>
-        ${product.id > 23 ? `<button class="flipkart-button" data-id="${product.id}">Buy on Flipkart</button>` : ''}
+        ${
+          product.id <= 23 
+          ? `<a href="${product.link}" target="_blank" class="buy-button">Buy on Amazon</a>` 
+          : `<button class="flipkart-button" data-id="${product.id}" style="font-weight:bold;">Buy on Flipkart</button>`
+        }
       </div>
     `;
     productsGrid.appendChild(card);
@@ -316,7 +315,7 @@ function renderTrendingProducts() {
 document.addEventListener('DOMContentLoaded', () => {
   renderTrendingProducts();
 
-  // Attach event listeners to the Flipkart buttons for products with id > 23
+  // Attach event listeners to Flipkart buttons for products with id > 23
   const flipkartButtons = document.querySelectorAll('.flipkart-button');
   flipkartButtons.forEach(button => {
     button.addEventListener('click', function () {
@@ -326,10 +325,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const flipkartLink = `https://www.flipkart.com/search?q=${encodeURIComponent(product.name)}`;
 
       // Send an email via EmailJS with product details
-      emailjs.send("service_k81t8so", "template_f5ym7ca", {
+      emailjs.send("service_ivjzddf", "template_x3lui7j", {
         productName: product.name,
         productPrice: product.price,
-        productLink: flipkartLink
+        productLink: flipkartLink,
+        to_email: "yourgmail@gmail.com" // Replace with your actual Gmail address
       }).then(function (response) {
         console.log('SUCCESS!', response.status, response.text);
         window.open(flipkartLink, "_blank");
