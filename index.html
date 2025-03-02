@@ -61,7 +61,7 @@
   <!-- Header -->
   <header class="header">
     <div class="logo-container">
-      <!-- Clicking the logo will toggle the mobile navigation -->
+      <!-- Clicking the logo toggles the mobile navigation -->
       <img src="logo.png" alt="TechLootDeals Logo" class="logo" style="cursor:pointer;" />
       <h1 class="site-title">TechLootDeals</h1>
     </div>
@@ -162,15 +162,22 @@ P.S. Missed yesterday's ₹899 wireless earbuds deal? Browse current Amazon loot
   <!-- JavaScript -->
   <script src="script.js"></script>
   <script>
-    // Auto-update copyright year
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.addEventListener('DOMContentLoaded', function() {
+      // Auto-update copyright year
+      document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Toggle the navigation menu on mobile when the logo is clicked
-    document.querySelector('.logo').addEventListener('click', function() {
-      // Only apply toggle on Android devices or on screens <= 768px wide
-      if (navigator.userAgent.toLowerCase().indexOf("android") > -1 || window.innerWidth <= 768) {
-        document.querySelector('.nav').classList.toggle('hidden');
+      // On Android devices, hide the navigation menu by default.
+      if (navigator.userAgent.toLowerCase().indexOf("android") > -1) {
+        document.querySelector('.nav').classList.add('hidden');
       }
+
+      // Toggle the navigation menu on mobile when the logo is clicked
+      document.querySelector('.logo').addEventListener('click', function() {
+        // Only apply toggle on Android devices or on screens <= 768px wide
+        if (navigator.userAgent.toLowerCase().indexOf("android") > -1 || window.innerWidth <= 768) {
+          document.querySelector('.nav').classList.toggle('hidden');
+        }
+      });
     });
   </script>
 </body>
