@@ -1,9 +1,3 @@
-// Make sure to include EmailJS library in your HTML before this script:
-// <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-
-// Initialize EmailJS with your public key
-emailjs.init("zTSoGecZmVj7wc-D6");
-
 // List of 30 trending Amazon products with price matched details
 const trendingProducts = [
   {
