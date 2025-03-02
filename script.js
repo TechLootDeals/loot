@@ -6,7 +6,7 @@ const trendingProducts = [
     description: "Experience high-quality sound with these top-rated wireless earbuds.",
     price: "1,299",
     image: "images/earbuds.jpg",
-    link: "https://www.amazon.in/dp/B07XYZ1234/?tag=youraffiliatetag"
+    link: "https://amzn.to/41Dzp1W"
   },
   {
     id: 2,
