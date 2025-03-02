@@ -28,12 +28,19 @@
   <link rel="stylesheet" href="styles.css" />
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
-  <!-- Mobile Header Fix: Remove fixed positioning on mobile devices -->
+  <!-- Mobile Header Fix & Nav Slide-Up Animation -->
   <style>
     @media (max-width: 768px) {
       .header {
         position: relative !important;
       }
+      .nav.slide-up {
+        animation: slideUp 0.5s forwards;
+      }
+    }
+    @keyframes slideUp {
+      from { transform: translateY(0); opacity: 1; }
+      to { transform: translateY(-100%); opacity: 0; }
     }
   </style>
 </head>
@@ -143,6 +150,13 @@ P.S. Missed yesterday's ₹899 wireless earbuds deal? Browse current Amazon loot
   <script>
     // Auto-update copyright year
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // On mobile (Android or narrow screens), clicking the logo triggers nav slide-up animation.
+    document.querySelector('.logo').addEventListener('click', function() {
+      if (navigator.userAgent.toLowerCase().indexOf("android") > -1 || window.innerWidth <= 768) {
+        document.querySelector('.nav').classList.add('slide-up');
+      }
+    });
   </script>
 </body>
 </html>
