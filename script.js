@@ -68,7 +68,7 @@ const trendingProducts = [
     id: 9,
     name: "Mechanical Keyboard",
     description: "Enjoy a superior typing experience with this mechanical keyboard.",
-    price: 2,599",
+    price: "2,599",
     image: "Screenshot 2025-03-01 18.54.09.png",
     link: "https://amzn.to/3Xqe75k"
   },
@@ -102,7 +102,8 @@ const trendingProducts = [
     description: "Stay ahead with the latest smartphone featuring cutting-edge technology.",
     price: "25,999",
     image: "Screenshot 2025-03-01 19.41.43.png",
-    link: "https://amzn.to/4bqiUJz
+    link: "https://amzn.to/4bqiUJz"
+  },
   {
     id: 14,
     name: "Leather Bean Bag Combo",
@@ -207,7 +208,7 @@ const trendingProducts = [
     image: "Screenshot 2025-03-01 20.08.50.png",
     link: "https://www.amazon.in/dp/B07STU9012/?tag=youraffiliatetag"
   },
-    {
+  {
     id: 27,
     name: "Loom Solar Panel",
     description: "Solar systems, DIY solar projects, and small solar setups for home and mobile charging.",
@@ -215,7 +216,7 @@ const trendingProducts = [
     image: "Screenshot 2025-03-01 20.12.53.png",
     link: "https://www.amazon.in/dp/B08ABC5678/?tag=youraffiliatetag"
   },
-    {
+  {
     id: 28,
     name: "2 in 1 foldable fan",
     description: "Brushless DC (BLDC) motor for powerful, yet ultra-quiet operation, making it ideal for any setting.",
@@ -223,28 +224,32 @@ const trendingProducts = [
     image: "Screenshot 2025-03-01 20.14.11.png",
     link: "https://www.amazon.in/dp/B08ABC5678/?tag=youraffiliatetag"
   },
-   {  id: 29,
+  {
+    id: 29,
     name: "Water Gun Toy",
     description: "Perfect Pool Toy for Summer Fun! - Enjoy the summer and create long-lasting memories..",
     price: "1,399",
     image: "Screenshot 2025-03-01 20.21.22.png",
     link: "https://www.amazon.in/dp/B08ABC5678/?tag=youraffiliatetag"
   },
-     {  id: 30,
+  {
+    id: 30,
     name: "Women's Sneaker",
     description: "Step up your sneaker game with the Smashic Women's Sneakers from PUMA",
     price: "1,599",
     image: "Screenshot 2025-03-01 20.27.51.png",
     link: "https://amzn.to/3Dn3ZTW"
   },
-    {  id: 31,
+  {
+    id: 31,
     name: "Budget AC",
     description: "copper condenser coil with patented dnns self heal coating for low maintenance & enhanced durability",
     price: "33,499",
     image: "Screenshot 2025-03-02 09.29.06.png",
     link: "https://www.amazon.in/dp/B08ABC5678/?tag=youraffiliatetag"
   },
-    {  id: 32,
+  {
+    id: 32,
     name: "Verbal Non Verbal Reasoning Book",
     description: "verbal & non-verbal reasoning 47 videos, 1000+ solved examples",
     price: "1,250",
