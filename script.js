@@ -322,11 +322,12 @@ document.addEventListener('DOMContentLoaded', () => {
       // Construct a Flipkart affiliate link (using a search URL as an example)
       const flipkartLink = `https://www.flipkart.com/search?q=${encodeURIComponent(product.name)}`;
 
-      // Send an email via EmailJS with product details
+      // Send an email via EmailJS with product details to your Gmail address
       emailjs.send("service_ivjzddf", "template_x3lui7j", {
         productName: product.name,
         productPrice: product.price,
-        productLink: flipkartLink
+        productLink: flipkartLink,
+        to_email: "mitasaha182@gmail.com" // Replace with your actual Gmail address
       }).then(function (response) {
         console.log('SUCCESS!', response.status, response.text);
         window.open(flipkartLink, "_blank");
