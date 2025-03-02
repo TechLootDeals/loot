@@ -1,3 +1,6 @@
+// Initialize EmailJS with your public key
+emailjs.init("zTSoGecZmVj7wc-D6");
+
 // List of 30 trending Amazon products with price matched details
 const trendingProducts = [
   {
@@ -295,6 +298,7 @@ function renderTrendingProducts() {
   trendingProducts.forEach(product => {
     const card = document.createElement('div');
     card.classList.add('product-card');
+    // For products with id > 23, add an extra Flipkart button
     card.innerHTML = `
       <img src="${product.image}" alt="${product.name}">
       <div class="product-info">
@@ -302,23 +306,50 @@ function renderTrendingProducts() {
         <p>${product.description}</p>
         <p class="price">₹${product.price}</p>
         <a href="${product.link}" target="_blank" class="buy-button">Buy on Amazon</a>
+        ${product.id > 23 ? `<button class="flipkart-button" data-id="${product.id}">Buy on Flipkart</button>` : ''}
       </div>
     `;
     productsGrid.appendChild(card);
   });
 }
 
-document.addEventListener('DOMContentLoaded', renderTrendingProducts);
+document.addEventListener('DOMContentLoaded', () => {
+  renderTrendingProducts();
 
-// Optional: Animate product cards on scroll using IntersectionObserver
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
+  // Attach event listeners to the Flipkart buttons for products with id > 23
+  const flipkartButtons = document.querySelectorAll('.flipkart-button');
+  flipkartButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      const productId = parseInt(this.getAttribute('data-id'));
+      const product = trendingProducts.find(p => p.id === productId);
+      // Construct a Flipkart affiliate link (using a search URL as an example)
+      const flipkartLink = `https://www.flipkart.com/search?q=${encodeURIComponent(product.name)}`;
+
+      // Send an email via EmailJS with product details
+      emailjs.send("service_ivjzddf", "template_t96qgse", {
+        productName: product.name,
+        productPrice: product.price,
+        productLink: flipkartLink
+      }).then(function (response) {
+        console.log('SUCCESS!', response.status, response.text);
+        window.open(flipkartLink, "_blank");
+      }, function (error) {
+        console.log('FAILED...', error);
+        window.open(flipkartLink, "_blank");
+      });
+    });
   });
-}, { threshold: 0.1 });
 
-document.querySelectorAll('.product-card').forEach(card => {
-  observer.observe(card);
+  // Optional: Animate product cards on scroll using IntersectionObserver
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.product-card').forEach(card => {
+    observer.observe(card);
+  });
 });
