@@ -14,7 +14,7 @@ const trendingProducts = [
     description: "Immerse yourself in music with advanced noise cancellation.",
     price: "3,499",
     image: "Screenshot 2025-03-01 18.37.02.png",
-    link: "https://amzn.to/4koT6la"
+    link: ""
   },
   {
     id: 3,
@@ -22,7 +22,7 @@ const trendingProducts = [
     description: "lowest price as a wristphone to monitor your health with this stylish android smart watch.",
     price: "4,999",
     image: "Screenshot 2025-03-01 18.38.49.png",
-    link: "https://amzn.to/3QE9Bwn"
+    link: ""
   },
   {
     id: 4,
@@ -30,7 +30,7 @@ const trendingProducts = [
     description: "Portable Bluetooth speaker with powerful sound and deep bass.",
     price: "2,299",
     image: "Screenshot 2025-03-01 18.41.17.png",
-    link: "https://amzn.to/41BsOoB"
+    link: ""
   },
   {
     id: 5,
@@ -38,7 +38,7 @@ const trendingProducts = [
     description: "High-capacity portable charger to keep your devices powered on the go.",
     price: "1,499",
     image: "Screenshot 2025-03-01 18.44.12.png",
-    link: "https://www.amazon.in/dp/B07JKL7890/?tag=youraffiliatetag"
+    link: ""
   },
   {
     id: 6,
@@ -46,7 +46,7 @@ const trendingProducts = [
     description: "Sleek and durable backpack designed for tech enthusiasts.",
     price: "1,799",
     image: "Screenshot 2025-03-01 18.47.02.png",
-    link: "https://amzn.to/4brfK8M
+    link: "https://amzn.to/4brfK8M"
   },
   {
     id: 7,
