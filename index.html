@@ -1,187 +1,355 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AmazonLootDeals - Best Tech Deals Of Amazon</title>
-  <meta name="description" content="Discover amazon,flipkart loot deals today. Shop the best gadgets, electronics, and accessories at unbeatable prices." />
-  <meta name="keywords" content="loot deals, amazon loot deals, flipkart loot deals, tech deals india, indiadesire, loot offer, amazon quiz, Amazon deals, flipkart big billion days, amazon great indian festivals, gadgets deals, electronics, discounts" />
-  <meta name="author" content="TechLootDeals" />
+// List of 30+ trending Amazon products with price matched details
+const trendingProducts = [
+  {
+    id: 1,
+    name: "Wireless Earbuds",
+    description: "Experience high-quality sound with these top-rated wireless earbuds.",
+    price: "1,299",
+    image: "Screenshot 2025-03-01 18.28.42.png",
+    link: "https://amzn.to/4ijCvgN"
+  },
+  {
+    id: 2,
+    name: "Noise Cancelling Headphones",
+    description: "Immerse yourself in music with advanced noise cancellation.",
+    price: "3,499",
+    image: "Screenshot 2025-03-01 18.37.02.png",
+    link: "https://amzn.to/4bFgnvz"
+  },
+  {
+    id: 3,
+    name: "Android Smart Watch",
+    description: "lowest price as a wristphone to monitor your health with this stylish android smart watch.",
+    price: "4,999",
+    image: "Screenshot 2025-03-01 18.38.49.png",
+    link: "https://amzn.to/4bsUwXR"
+  },
+  {
+    id: 4,
+    name: "Bluetooth Speaker",
+    description: "Portable Bluetooth speaker with powerful sound and deep bass.",
+    price: "2,299",
+    image: "Screenshot 2025-03-01 18.41.17.png",
+    link: "https://amzn.to/41zmjm9"
+  },
+  {
+    id: 5,
+    name: "Portable Power Bank",
+    description: "High-capacity portable charger to keep your devices powered on the go.",
+    price: "1,499",
+    image: "Screenshot 2025-03-01 18.44.12.png",
+    link: "https://amzn.to/4bmyLZE"
+  },
+  {
+    id: 6,
+    name: "Laptop Backpack",
+    description: "Sleek and durable backpack designed for tech enthusiasts.",
+    price: "1,799",
+    image: "Screenshot 2025-03-01 18.47.02.png",
+    link: "https://amzn.to/4brfK8M"
+  },
+  {
+    id: 7,
+    name: "USB-C Hub",
+    description: "Expand your connectivity with this versatile USB-C hub.",
+    price: "1,499",
+    image: "Screenshot 2025-03-01 18.50.04.png",
+    link: "https://amzn.to/41EqsFq"
+  },
+  {
+    id: 8,
+    name: "Wireless Mouse",
+    description: "Smooth and responsive wireless mouse for everyday tasks.",
+    price: "699",
+    image: "Screenshot 2025-03-01 18.51.34.png",
+    link: "https://amzn.to/4ijVtnJ"
+  },
+  {
+    id: 9,
+    name: "Mechanical Keyboard",
+    description: "Enjoy a superior typing experience with this mechanical keyboard.",
+    price: "2,599",
+    image: "Screenshot 2025-03-01 18.54.09.png",
+    link: "https://amzn.to/3Xqe75k"
+  },
+  {
+    id: 10,
+    name: "HD Webcam",
+    description: "Crystal clear video calls with this high-definition webcam.",
+    price: "2,499",
+    image: "Screenshot 2025-03-01 18.55.47.png",
+    link: "https://amzn.to/3QGhKjS"
+  },
+  {
+    id: 11,
+    name: "Gaming Monitor",
+    description: "Elevate your gaming with a high-resolution, fast refresh rate monitor.",
+    price: "14,999",
+    image: "Screenshot 2025-03-01 18.57.35.png",
+    link: "https://amzn.to/41CLgwY"
+  },
+  {
+    id: 12,
+    name: "Smart LED TV",
+    description: "Enjoy vibrant colors and smart features with this LED TV.",
+    price: "25,999",
+    image: "Screenshot 2025-03-01 19.16.37.png",
+    link: "https://amzn.to/41jEOK5"
+  },
+  {
+    id: 13,
+    name: "Latest Smartphone",
+    description: "Stay ahead with the latest smartphone featuring cutting-edge technology.",
+    price: "25,999",
+    image: "Screenshot 2025-03-01 19.41.43.png",
+    link: "https://amzn.to/4bqiUJz"
+  },
+  {
+    id: 14,
+    name: "Leather Bean Bag Combo",
+    description: "Footrest & Cushion Combo, Filled with Beans",
+    price: "2,039",
+    image: "Screenshot 2025-03-01 19.26.47.png",
+    link: "https://amzn.to/3DemASa"
+  },
+  {
+    id: 15,
+    name: "Home Security Camera",
+    description: "Keep your home safe with this smart, easy-to-install security camera.",
+    price: "3,099",
+    image: "Screenshot 2025-03-01 19.35.38.png",
+    link: "https://amzn.to/3D0D9kE"
+  },
+  {
+    id: 16,
+    name: "Camera Drone",
+    description: "Capture stunning aerial footage with this easy-to-fly camera drone.",
+    price: "16,999",
+    image: "Screenshot 2025-03-01 19.45.25.png",
+    link: "https://amzn.to/4ijcVIW"
+  },
+  {
+    id: 17,
+    name: "Electric Scooter",
+    description: "Efficient and stylish electric scooter for hassle-free commuting.",
+    price: "26,999",
+    image: "Screenshot 2025-03-01 19.52.42.png",
+    link: "https://amzn.to/4imXBuY"
+  },
+  {
+    id: 18,
+    name: "VR Headset",
+    description: "Immerse yourself in virtual worlds with this advanced VR headset.",
+    price: "8,999",
+    image: "Screenshot 2025-03-01 19.55.31.png",
+    link: "https://amzn.to/3QJHZ93"
+  },
+  {
+    id: 19,
+    name: "Tablet",
+    description: "Portable and powerful tablet ideal for work and play.",
+    price: "12,999",
+    image: "Screenshot 2025-03-01 20.00.21.png",
+    link: "https://amzn.to/4gZW8K1"
+  },
+  {
+    id: 20,
+    name: "4K Action Camera",
+    description: "Record adventures in stunning 4K resolution with this action camera.",
+    price: "6,499",
+    image: "Screenshot 2025-03-01 20.02.00.png",
+    link: "https://amzn.to/3QFZy9X"
+  },
+  {
+    id: 21,
+    name: "Smart Home Assistant",
+    description: "Control your home with voice commands using this smart assistant.",
+    price: "3,999",
+    image: "Screenshot 2025-03-01 19.17.59.png",
+    link: "https://amzn.to/4h7MuVJ"
+  },
+  {
+    id: 22,
+    name: "Wireless Router",
+    description: "Boost your internet speed with this high-performance wireless router.",
+    price: "2,199",
+    image: "Screenshot 2025-03-01 20.03.54.png",
+    link: "https://amzn.to/3FbCQE0"
+  },
+  {
+    id: 23,
+    name: "SSD External Drive",
+    description: "Fast and reliable external SSD for all your data storage needs.",
+    price: "7,999",
+    image: "Screenshot 2025-03-01 20.05.26.png",
+    link: "https://amzn.to/41E74sc"
+  },
+  {
+    id: 24,
+    name: "Rc Rock Crawler",
+    description: "Off road car: Electric brushed with four big driving wheels to run on the smooth ground, sand and small hills",
+    price: "29,999",
+    image: "Screenshot 2025-03-01 19.48.12.png",
+    link: "https://www.amazon.in/dp/B08MNO9012/?tag=youraffiliatetag"
+  },
+  {
+    id: 25,
+    name: "PC Gaming Chair",
+    description: "Ergonomic and stylish gaming chair designed for long sessions.",
+    price: "10,999",
+    image: "Screenshot 2025-03-01 20.07.15.png",
+    link: "https://www.amazon.in/dp/B08PQR3456/?tag=youraffiliatetag"
+  },
+  {
+    id: 26,
+    name: "Ergonomic Office Chair",
+    description: "Enhance your workspace comfort with this ergonomic office chair.",
+    price: "8,999",
+    image: "Screenshot 2025-03-01 20.08.50.png",
+    link: "https://www.amazon.in/dp/B07STU9012/?tag=youraffiliatetag"
+  },
+  {
+    id: 27,
+    name: "Loom Solar Panel",
+    description: "Solar systems, DIY solar projects, and small solar setups for home and mobile charging.",
+    price: "3,499",
+    image: "Screenshot 2025-03-01 20.12.53.png",
+    link: "https://www.amazon.in/dp/B08ABC5678/?tag=youraffiliatetag"
+  },
+  {
+    id: 28,
+    name: "2 in 1 foldable fan",
+    description: "Brushless DC (BLDC) motor for powerful, yet ultra-quiet operation, making it ideal for any setting.",
+    price: "1,299",
+    image: "Screenshot 2025-03-01 20.14.11.png",
+    link: "https://www.amazon.in/dp/B08ABC5678/?tag=youraffiliatetag"
+  },
+  {
+    id: 29,
+    name: "Water Gun Toy",
+    description: "Perfect Pool Toy for Summer Fun! - Enjoy the summer and create long-lasting memories..",
+    price: "1,399",
+    image: "Screenshot 2025-03-01 20.21.22.png",
+    link: "https://www.amazon.in/dp/B08ABC5678/?tag=youraffiliatetag"
+  },
+  {
+    id: 30,
+    name: "Women's Sneaker",
+    description: "Step up your sneaker game with the Smashic Women's Sneakers from PUMA",
+    price: "1,599",
+    image: "Screenshot 2025-03-01 20.27.51.png",
+    link: "https://amzn.to/3Dn3ZTW"
+  },
+  {
+    id: 31,
+    name: "Budget AC",
+    description: "copper condenser coil with patented dnns self heal coating for low maintenance & enhanced durability",
+    price: "33,499",
+    image: "Screenshot 2025-03-02 09.29.06.png",
+    link: "https://www.amazon.in/dp/B08ABC5678/?tag=youraffiliatetag"
+  },
+  {
+    id: 32,
+    name: "Verbal Non Verbal Reasoning Book",
+    description: "verbal & non-verbal reasoning 47 videos, 1000+ solved examples",
+    price: "1,250",
+    image: "Screenshot 2025-03-01 19.50.50.png",
+    link: "https://www.amazon.in/dp/B08ABC5678/?tag=youraffiliatetag"
+  },
+  {
+    id: 33,
+    name: "LED Desk Lamp",
+    description: "Modern, energy-efficient LED desk lamp with adjustable brightness.",
+    price: "1,799",
+    image: "Screenshot 2025-03-01 20.11.59.png",
+    link: "https://www.amazon.in/dp/B08VWX1234/?tag=youraffiliatetag"
+  },
+  {
+    id: 34,
+    name: "Noise Cancelling Earbuds",
+    description: "Compact earbuds featuring advanced noise cancellation technology.",
+    price: "1,699",
+    image: "Screenshot 2025-03-01 20.15.45.png",
+    link: "https://www.amazon.in/dp/B07YZ9012/?tag=youraffiliatetag"
+  },
+  {
+    id: 35,
+    name: "Portable Bluetooth Projector",
+    description: "Enjoy movies anywhere with this portable Bluetooth projector.",
+    price: "6,499",
+    image: "Screenshot 2025-03-01 20.18.15.png",
+    link: "https://www.amazon.in/dp/B08ABC7890/?tag=youraffiliatetag"
+  },
+  {
+    id: 36,
+    name: "Smart Thermostat",
+    description: "Save energy and keep your home comfortable with this smart thermostat.",
+    price: "7,999",
+    image: "Screenshot 2025-03-01 20.20.02.png",
+    link: "https://www.amazon.in/dp/B09DEF1234/?tag=youraffiliatetag"
+  }
+];
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="AmazonLootDeals - Best Tech Deals in India At Lowest Price🔥" />
-  <meta property="og:description" content="Discover top loot deals of Amazon. Shop the best gadgets, home appliances, electronics, and accessories at unbeatable prices." />
-  <meta property="og:image" content="logo.png" />
-  <meta property="og:url" content="https://amazon.github.io/TechLootDeals/" />
-  <meta property="og:type" content="website" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="AmazonLootDeals - Best Tech Deals in Rupees" />
-  <meta name="twitter:description" content="Discover top amazon deals in Rupees. Shop the best gadgets, electronics, and accessories at unbeatable prices." />
-  <meta name="twitter:image" content="images/techlootdeals-logo.png" />
-
-  <!-- Favicon -->
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-
-  <!-- Mobile Header & Nav Toggle CSS -->
-  <style>
-    /* For mobile devices, remove fixed header behavior */
-    @media (max-width: 768px) {
-      .header {
-        position: relative !important;
-      }
-      /* Position nav absolutely so it overlays content when visible */
-      .nav {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: #fff; /* Adjust background as needed */
-        transition: transform 0.5s ease, opacity 0.5s ease;
-        transform: translateY(0);
-        opacity: 1;
-        pointer-events: auto;
-        z-index: 10;
-      }
-      /* Hidden state: slide nav up and remove interaction */
-      .nav.hidden {
-        transform: translateY(-100%);
-        opacity: 0;
-        pointer-events: none;
-      }
-    }
-  </style>
-</head>
-<body>
-  <!-- Header -->
-  <header class="header">
-    <div class="logo-container">
-      <!-- Clicking the logo toggles the mobile navigation -->
-      <img src="logo.png" alt="TechLootDeals Logo" class="logo" style="cursor:pointer;" />
-      <h1 class="site-title">TechLootDeals</h1>
-    </div>
-    <nav class="nav">
-      <ul>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#amazon-deals">Amazon Deals</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Find the Best Tech Deals At Lowest Price Of Amazon..</h2>
-      <p>Explore over 30 handpicked tech products with unbeatable discounts loot deals!</p>
-      <p>"Exclusive Limited-Time Offer🔥! Secure this unbeatable deal NOW—only available here with 10% off!🔥"</p>
-      <a href="#products" class="cta-button">Shop Now</a>
-    </div>
-  </section>
-
-  <!-- Products Section -->
-  <section id="products" class="products-section">
-    <h2>Featured Products</h2>
-    <div class="products-grid" id="products-grid">
-      <!-- Product cards will be injected here by JavaScript -->
-    </div>
-  </section>
-
-  <!-- Amazon Deals Section -->
-  <section id="amazon-deals" class="amazon-section">
-    <h2>Amazon Loot Affiliate Deals</h2>
-    <p>Check out the latest deals on Amazon:</p>
-    <a href="https://amzn.to/4h7Iapt" target="_blank" class="amazon-link">Visit Amazon Deals</a>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="about-section">
-    <h2>About TechLootDeals</h2>
-    <p>
-      Welcome to TechLootDeals
-    <a href="https://www.youtube.com/@techlootdeals-r4s" target="_blank" style="color: blue; text-decoration: underline;">
-    (TechLootDeals YouTube Channel)
-  </a> – Your Ultimate Source for Amazon Loot Deals & Tech Bargains!
-At TechLootDeals, we specialize in uncovering the best Amazon loot deals for Indian shoppers. Our team works 24/7 to bring you exclusive discounts on gadgets, electronics, and premium tech accessories - all priced in Rupees for your convenience.
-
-  Why Choose TechLootDeals for Amazon Loot Deals?
-✓ Real-time updates on Amazon loot deals today
-✓ Verified Flipkart & Amazon loot deals comparison
-✓ Exclusive access to limited-time tech offers
-✓ Price drop alerts across multiple categories
-
-Join 50,000+ Smart Shoppers Through:
-🔹 Amazon Loot Deals Telegram Group
-🔹 Flipkart-Amazon Deals WhatsApp Group
-🔹 Daily Email Alerts
-
-Our 3-Step Quality Promise
-AI-Powered Deal Tracking - Scans 1000+ products hourly
-
-Human Verification - Experts test product claims
-
-Safe Purchase Guarantee - Only trusted seller listings
-
-Pro Tip: Learn how to find Amazon loot deals faster using our deal-hunting toolkit.
-
-Stay Connected – Never Miss an Amazon Loot Deal!
-👉 Follow our Amazon Flipkart loot deals Telegram channel
-👉 Bookmark our daily deals page
-👉 Enable browser notifications
-
-P.S. Missed yesterday's ₹899 wireless earbuds deal? Browse current Amazon loot deals before stock runs out!
-    </p>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section">
-    <h2>Contact Us</h2>
-    <p>Have questions or need support? Get in touch with us.</p>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
-
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; <span id="year"></span> TechLootDeals. All rights reserved.</p>
-  </footer>
-
-  <!-- JavaScript -->
-  <script src="script.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Auto-update copyright year
-      document.getElementById('year').textContent = new Date().getFullYear();
-
-      // On Android devices, hide the navigation menu by default.
-      if (navigator.userAgent.toLowerCase().indexOf("android") > -1) {
-        document.querySelector('.nav').classList.add('hidden');
-      }
-
-      // Toggle the navigation menu on mobile when the logo is clicked
-      document.querySelector('.logo').addEventListener('click', function() {
-        // Only apply toggle on Android devices or on screens <= 768px wide
-        if (navigator.userAgent.toLowerCase().indexOf("android") > -1 || window.innerWidth <= 768) {
-          document.querySelector('.nav').classList.toggle('hidden');
+function renderTrendingProducts() {
+  const productsGrid = document.getElementById('products-grid');
+  trendingProducts.forEach(product => {
+    const card = document.createElement('div');
+    card.classList.add('product-card');
+    card.innerHTML = `
+      <img src="${product.image}" alt="${product.name}">
+      <div class="product-info">
+        <h3>${product.name}</h3>
+        <p>${product.description}</p>
+        <p class="price">₹${product.price}</p>
+        ${
+          product.id <= 23 
+          ? `<a href="${product.link}" target="_blank" class="buy-button">Buy on Amazon</a>` 
+          : `<button class="flipkart-button" data-id="${product.id}" style="font-weight:bold;">Buy on Flipkart</button>`
         }
+      </div>
+    `;
+    productsGrid.appendChild(card);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  renderTrendingProducts();
+
+  // Attach event listeners to Flipkart buttons for products with id > 23
+  const flipkartButtons = document.querySelectorAll('.flipkart-button');
+  flipkartButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      const productId = parseInt(this.getAttribute('data-id'));
+      const product = trendingProducts.find(p => p.id === productId);
+      // Construct a Flipkart affiliate link (using a search URL as an example)
+      const flipkartLink = `https://www.flipkart.com/search?q=${encodeURIComponent(product.name)}`;
+
+      // Send an email via EmailJS with product details
+      emailjs.send("service_ivjzddf", "template_x3lui7j", {
+        productName: product.name,
+        productPrice: product.price,
+        productLink: flipkartLink,
+        to_email: "yourgmail@gmail.com" // Replace with your actual Gmail address
+      }).then(function (response) {
+        console.log('SUCCESS!', response.status, response.text);
+        window.open(flipkartLink, "_blank");
+      }, function (error) {
+        console.log('FAILED...', error);
+        window.open(flipkartLink, "_blank");
       });
     });
-  </script>
-</body>
-</html>
+  });
+
+  // Optional: Animate product cards on scroll using IntersectionObserver
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.product-card').forEach(card => {
+    observer.observe(card);
+  });
+});
