@@ -6,7 +6,7 @@ const trendingProducts = [
     description: "Experience high-quality sound with these top-rated wireless earbuds.",
     price: "1,299",
     image: "Screenshot 2025-03-01 18.28.42.png",
-    link: "https://www.amazon.in/D-Link-DIR-825-Dual-Band-Gigabit-Router/dp/B078L5J7G1?pd_rd_w=maZJE&content-id=amzn1.sym.fa0aca50-60f7-47ca-a90e-c40e2f4b46a9%3Aamzn1.symc.ca948091-a64d-450e-86d7-c161ca33337b&pf_rd_p=fa0aca50-60f7-47ca-a90e-c40e2f4b46a9&pf_rd_r=T1473CBM92MP0AHS9K99&pd_rd_wg=T7N6F&pd_rd_r=f3c38637-5691-4056-ba43-366691ed9ea7&pd_rd_i=B078L5J7G1&linkCode=ll1&tag=techlootde0e0-21&linkId=bd0a7b27700902062e9fc5f9e941b580&language=en_IN&ref_=as_li_ss_tl"
+    link: ""
   },
   {
     id: 2,
