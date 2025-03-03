@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AmazonLootDeals - Best Tech Deals Of Amazon</title>
-  <meta name="description" content="Discover amazon loot deals,flipkart loot deals today. Shop the best gadgets, electronics, and accessories at unbeatable prices." />
+  <meta name="description" content="Discover amazon loot deals, flipkart loot deals today. Shop the best gadgets, electronics, and accessories at unbeatable prices." />
   <meta name="keywords" content="loot deals, amazon loot deals, flipkart loot deals, tech deals india, indiadesire, loot offer, amazon quiz, Amazon deals, flipkart big billion days, amazon great indian festivals, gadgets deals, electronics, discounts" />
   <meta name="author" content="TechLootDeals" />
 
@@ -105,37 +105,35 @@
     <h2>About TechLootDeals</h2>
     <p>
       Welcome to TechLootDeals
-    <a href="https://www.youtube.com/@techlootdeals-r4s" target="_blank" style="color: blue; text-decoration: underline;">
-    (TechLootDeals YouTube Channel)
-  </a> – Your Ultimate Source for Amazon Loot Deals & Tech Bargains!
-At TechLootDeals, we specialize in uncovering the best Amazon loot deals for Indian shoppers. Our team works 24/7 to bring you exclusive discounts on gadgets, electronics, and premium tech accessories - all priced in Rupees for your convenience.
-
-  Why Choose TechLootDeals for Amazon Loot Deals?
-✓ Real-time updates on Amazon loot deals today
-✓ Verified Flipkart & Amazon loot deals comparison
-✓ Exclusive access to limited-time tech offers
-✓ Price drop alerts across multiple categories
-
-Join 50,000+ Smart Shoppers Through:
-🔹 Amazon Loot Deals Telegram Group
-🔹 Flipkart-Amazon Deals WhatsApp Group
-🔹 Daily Email Alerts
-
-Our 3-Step Quality Promise
-AI-Powered Deal Tracking - Scans 1000+ products hourly
-
-Human Verification - Experts test product claims
-
-Safe Purchase Guarantee - Only trusted seller listings
-
-Pro Tip: Learn how to find Amazon loot deals faster using our deal-hunting toolkit.
-
-Stay Connected – Never Miss an Amazon Loot Deal!
-👉 Follow our Amazon Flipkart loot deals Telegram channel
-👉 Bookmark our daily deals page
-👉 Enable browser notifications
-
-P.S. Missed yesterday's ₹899 wireless earbuds deal? Browse current Amazon loot deals before stock runs out!
+      <a href="https://www.youtube.com/@techlootdeals-r4s" target="_blank" style="color: blue; text-decoration: underline;">
+        (TechLootDeals YouTube Channel)
+      </a> – Your Ultimate Source for Amazon Loot Deals & Tech Bargains!
+      At TechLootDeals, we specialize in uncovering the best Amazon loot deals for Indian shoppers. Our team works 24/7 to bring you exclusive discounts on gadgets, electronics, and premium tech accessories - all priced in Rupees for your convenience.
+      <br /><br />
+      Why Choose TechLootDeals for Amazon Loot Deals?
+      ✓ Real-time updates on Amazon loot deals today  
+      ✓ Verified Flipkart & Amazon loot deals comparison  
+      ✓ Exclusive access to limited-time tech offers  
+      ✓ Price drop alerts across multiple categories
+      <br /><br />
+      Join 50,000+ Smart Shoppers Through:
+      🔹 Amazon Loot Deals Telegram Group  
+      🔹 Flipkart-Amazon Deals WhatsApp Group  
+      🔹 Daily Email Alerts
+      <br /><br />
+      Our 3-Step Quality Promise  
+      AI-Powered Deal Tracking - Scans 1000+ products hourly  
+      Human Verification - Experts test product claims  
+      Safe Purchase Guarantee - Only trusted seller listings
+      <br /><br />
+      Pro Tip: Learn how to find Amazon loot deals faster using our deal-hunting toolkit.
+      <br /><br />
+      Stay Connected – Never Miss an Amazon Loot Deal!
+      👉 Follow our Amazon Flipkart loot deals Telegram channel  
+      👉 Bookmark our daily deals page  
+      👉 Enable browser notifications
+      <br /><br />
+      P.S. Missed yesterday's ₹899 wireless earbuds deal? Browse current Amazon loot deals before stock runs out!
     </p>
   </section>
 
@@ -143,12 +141,13 @@ P.S. Missed yesterday's ₹899 wireless earbuds deal? Browse current Amazon loot
   <section id="contact" class="contact-section">
     <h2>Contact Us</h2>
     <p>Have questions or need support? Get in touch with us.</p>
-    <form>
+    <!-- Added id for EmailJS integration -->
+    <form id="contact-form">
       <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
+      <input type="text" id="name" name="from_name" required />
 
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+      <input type="email" id="email" name="reply_to" required />
 
       <label for="message">Message:</label>
       <textarea id="message" name="message" rows="4" required></textarea>
@@ -165,8 +164,8 @@ P.S. Missed yesterday's ₹899 wireless earbuds deal? Browse current Amazon loot
   <!-- JavaScript -->
   <script src="script.js"></script>
   <script>
+    // Auto-update copyright year
     document.addEventListener('DOMContentLoaded', function() {
-      // Auto-update copyright year
       document.getElementById('year').textContent = new Date().getFullYear();
 
       // On Android devices, hide the navigation menu by default.
@@ -176,11 +175,32 @@ P.S. Missed yesterday's ₹899 wireless earbuds deal? Browse current Amazon loot
 
       // Toggle the navigation menu on mobile when the logo is clicked
       document.querySelector('.logo').addEventListener('click', function() {
-        // Only apply toggle on Android devices or on screens <= 768px wide
         if (navigator.userAgent.toLowerCase().indexOf("android") > -1 || window.innerWidth <= 768) {
           document.querySelector('.nav').classList.toggle('hidden');
         }
       });
+    });
+  </script>
+
+  <!-- EmailJS Integration for Contact Form -->
+  <script type="text/javascript">
+    // Initialize EmailJS with your user ID
+    (function(){
+      emailjs.init("91SS_E_tD7Npha6kk"); // Replace with your EmailJS user ID
+    })();
+
+    // Attach the submit event handler to the contact form
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      // Send the form data using EmailJS
+      emailjs.sendForm('service_k81t8so', 'template_f5ym7ca', this)
+        .then(function() {
+          alert('Message sent successfully!');
+          document.getElementById('contact-form').reset();
+        }, function(error) {
+          alert('Failed to send message. Please try again later.');
+          console.log('EmailJS error:', error);
+        });
     });
   </script>
 </body>
