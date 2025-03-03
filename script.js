@@ -292,9 +292,9 @@ const trendingProducts = [
     id: 36,
     name: "Smart Thermostat",
     description: "Save energy and keep your home comfortable with this smart thermostat.",
-    price: "1,999",
+    price: "8,999",
     image: "Screenshot 2025-03-01 20.20.02.png",
-    link: "https://fkrtt.in/en/ZLBGh3"
+    link: "https://fkrtt.in/en/SaF4nw"
   }
 ];
 
