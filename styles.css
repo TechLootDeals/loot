@@ -152,6 +152,23 @@ body {
   background-color: #005999;
 }
 
+/* New Flipkart Button Styling (Matches Amazon Button) */
+.flipkart-button {
+  display: inline-block;
+  background-color: #007acc;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.flipkart-button:hover {
+  background-color: #005999;
+}
+
 /* Amazon Deals Section */
 .amazon-section {
   padding: 2rem;
