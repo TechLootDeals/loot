@@ -1,4 +1,11 @@
-// List of 30+ trending Amazon products with price matched details
+/**
+ * trending-products.js
+ * 
+ * Renders a grid of trending products and handles redirection.
+ * For Amazon products (id ≤ 23), a direct anchor link is used.
+ * For Flipkart products (id > 23), a button click redirects to the fixed link.
+ */
+
 const trendingProducts = [
   {
     id: 1,
@@ -19,7 +26,7 @@ const trendingProducts = [
   {
     id: 3,
     name: "Android Smart Watch",
-    description: "lowest price as a wristphone to monitor your health with this stylish android smart watch.",
+    description: "Lowest price as a wristphone to monitor your health with this stylish android smart watch.",
     price: "4,999",
     image: "Screenshot 2025-03-01 18.38.49.png",
     link: "https://amzn.to/4bsUwXR"
@@ -184,10 +191,11 @@ const trendingProducts = [
     image: "Screenshot 2025-03-01 20.05.26.png",
     link: "https://amzn.to/41E74sc"
   },
+  // Flipkart products (id > 23)
   {
     id: 24,
     name: "Rc Rock Crawler",
-    description: "Off road car: Electric brushed with four big driving wheels to run on the smooth ground, sand and small hills",
+    description: "Off road car: Electric brushed with four big driving wheels to run on smooth ground, sand and small hills",
     price: "1,199",
     image: "Screenshot 2025-03-01 19.48.12.png",
     link: "https://fkrtt.in/en/3Ctcoo"
@@ -227,7 +235,7 @@ const trendingProducts = [
   {
     id: 29,
     name: "Water Gun Toy",
-    description: "Perfect Pool Toy for Summer Fun! - Enjoy the summer and create long-lasting memories..",
+    description: "Perfect Pool Toy for Summer Fun! - Enjoy the summer and create long-lasting memories.",
     price: "1,399",
     image: "Screenshot 2025-03-01 20.21.22.png",
     link: "https://fkrtt.in/en/j7yPVE"
@@ -243,7 +251,7 @@ const trendingProducts = [
   {
     id: 31,
     name: "Budget AC",
-    description: "copper condenser coil with patented dnns self heal coating for low maintenance & enhanced durability",
+    description: "Copper condenser coil with patented DNNS self-heal coating for low maintenance & enhanced durability",
     price: "33,499",
     image: "Screenshot 2025-03-02 09.29.06.png",
     link: "https://fkrtt.in/en/nOYju9"
@@ -251,7 +259,7 @@ const trendingProducts = [
   {
     id: 32,
     name: "Verbal Non Verbal Reasoning Book",
-    description: "verbal & non-verbal reasoning 47 videos, 1000+ solved examples",
+    description: "Verbal & non-verbal reasoning 47 videos, 1000+ solved examples",
     price: "1,250",
     image: "Screenshot 2025-03-01 19.50.50.png",
     link: "https://fkrtt.in/en/6UolsT"
@@ -290,11 +298,12 @@ const trendingProducts = [
   }
 ];
 
+// Function to render the products grid.
 function renderTrendingProducts() {
   const productsGrid = document.getElementById('products-grid');
   trendingProducts.forEach(product => {
     const card = document.createElement('div');
-    card.classList.add('product-card');
+    card.className = 'product-card';
     card.innerHTML = `
       <img src="${product.image}" alt="${product.name}">
       <div class="product-info">
@@ -302,9 +311,9 @@ function renderTrendingProducts() {
         <p>${product.description}</p>
         <p class="price">₹${product.price}</p>
         ${
-          product.id <= 23 
-          ? `<a href="${product.link}" target="_blank" class="buy-button">Buy on Amazon</a>` 
-          : `<button class="flipkart-button" data-id="${product.id}" style="font-weight:bold;">Buy on Flipkart</button>`
+          product.id <= 23
+            ? `<a href="${product.link}" target="_blank" class="buy-button">Buy on Amazon</a>`
+            : `<button class="flipkart-button" data-id="${product.id}" style="font-weight:bold;">Buy on Flipkart</button>`
         }
       </div>
     `;
@@ -312,35 +321,23 @@ function renderTrendingProducts() {
   });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  renderTrendingProducts();
-
-  // Attach event listeners to Flipkart buttons for products with id > 23
-  const flipkartButtons = document.querySelectorAll('.flipkart-button');
-  flipkartButtons.forEach(button => {
-    button.addEventListener('click', function () {
-      const productId = parseInt(this.getAttribute('data-id'));
+// Function to attach event listeners for Flipkart product buttons.
+function setupFlipkartButtons() {
+  const buttons = document.querySelectorAll('.flipkart-button');
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const productId = parseInt(button.getAttribute('data-id'));
       const product = trendingProducts.find(p => p.id === productId);
-      // Construct a Flipkart affiliate link (using a search URL as an example)
-      const flipkartLink = `https://www.flipkart.com/search?q=${encodeURIComponent(product.name)}`;
-
-      // Send an email via EmailJS with product details
-      emailjs.send("service_ivjzddf", "template_x3lui7j", {
-        productName: product.name,
-        productPrice: product.price,
-        productLink: flipkartLink,
-        to_email: "yourgmail@gmail.com" // Replace with your actual Gmail address
-      }).then(function (response) {
-        console.log('SUCCESS!', response.status, response.text);
-        window.open(flipkartLink, "_blank");
-      }, function (error) {
-        console.log('FAILED...', error);
-        window.open(flipkartLink, "_blank");
-      });
+      if (product) {
+        // Direct redirection to the fixed link provided in the product object.
+        window.location.href = product.link;
+      }
     });
   });
+}
 
-  // Optional: Animate product cards on scroll using IntersectionObserver
+// Optional: Animate product cards as they enter the viewport.
+function setupIntersectionObserver() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -348,8 +345,15 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }, { threshold: 0.1 });
-
+  
   document.querySelectorAll('.product-card').forEach(card => {
     observer.observe(card);
   });
+}
+
+// Initialize when the DOM is fully loaded.
+document.addEventListener('DOMContentLoaded', () => {
+  renderTrendingProducts();
+  setupFlipkartButtons();
+  setupIntersectionObserver();
 });
