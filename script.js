@@ -244,9 +244,9 @@ const trendingProducts = [
     id: 30,
     name: "Women's Sneaker",
     description: "Step up your sneaker game with the Smashic Women's Sneakers from PUMA",
-    price: "1,599",
+    price: "2,499",
     image: "Screenshot 2025-03-01 20.27.51.png",
-    link: "https://fkrtt.in/en/7fzkXo"
+    link: "https://amzn.to/3Fhx97x"
   },
   {
     id: 31,
