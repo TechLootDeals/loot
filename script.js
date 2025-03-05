@@ -196,9 +196,9 @@ const trendingProducts = [
     id: 24,
     name: "Rc Rock Crawler",
     description: "Off road car: Electric brushed with four big driving wheels to run on smooth ground, sand and small hills",
-    price: "1,199",
+    price: "1,599",
     image: "Screenshot 2025-03-01 19.48.12.png",
-    link: "https://fkrtt.in/en/3Ctcoo"
+    link: "https://amzn.to/41oYGLO"
   },
   {
     id: 25,
@@ -311,7 +311,7 @@ function renderTrendingProducts() {
         <p>${product.description}</p>
         <p class="price">₹${product.price}</p>
         ${
-          product.id <= 23
+          product.id <= 24
             ? `<a href="${product.link}" target="_blank" class="buy-button">Buy on Amazon</a>`
             : `<button class="flipkart-button" data-id="${product.id}" style="font-weight:bold;">Buy on Flipkart</button>`
         }
