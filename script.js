@@ -222,7 +222,7 @@ const trendingProducts = [
     description: "Solar systems, DIY solar projects, and small solar setups for home and mobile charging.",
     price: "3,999",
     image: "Screenshot 2025-03-01 20.12.53.png",
-    link: "https://fkrtt.in/en/Svm8PV"
+    link: "https://amzn.to/3F6bpf3"
   },
   {
     id: 28,
@@ -311,7 +311,7 @@ function renderTrendingProducts() {
         <p>${product.description}</p>
         <p class="price">₹${product.price}</p>
         ${
-          product.id <= 25
+          product.id <= 26
             ? `<a href="${product.link}" target="_blank" class="buy-button">Buy on Amazon</a>`
             : `<button class="flipkart-button" data-id="${product.id}" style="font-weight:bold;">Buy on Flipkart</button>`
         }
