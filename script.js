@@ -204,17 +204,17 @@ const trendingProducts = [
     id: 25,
     name: "PC Gaming Chair",
     description: "Ergonomic and stylish gaming chair designed for long sessions.",
-    price: "7,999",
+    price: "11,000",
     image: "Screenshot 2025-03-01 20.07.15.png",
-    link: "https://fkrtt.in/en/aQO8at"
+    link: "https://amzn.to/4ioPjTj"
   },
   {
     id: 26,
     name: "Ergonomic Office Chair",
     description: "Enhance your workspace comfort with this ergonomic office chair.",
-    price: "5,999",
+    price: "7,999",
     image: "Screenshot 2025-03-01 20.08.50.png",
-    link: "https://fkrtt.in/en/to4PiY"
+    link: "https://amzn.to/3Xn34cT"
   },
   {
     id: 27,
@@ -311,7 +311,7 @@ function renderTrendingProducts() {
         <p>${product.description}</p>
         <p class="price">₹${product.price}</p>
         ${
-          product.id <= 24
+          product.id <= 25
             ? `<a href="${product.link}" target="_blank" class="buy-button">Buy on Amazon</a>`
             : `<button class="flipkart-button" data-id="${product.id}" style="font-weight:bold;">Buy on Flipkart</button>`
         }
