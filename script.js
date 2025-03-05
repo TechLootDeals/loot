@@ -262,7 +262,7 @@ const trendingProducts = [
     description: "Verbal & non-verbal reasoning 47 videos, 1000+ solved examples",
     price: "1,250",
     image: "Screenshot 2025-03-01 19.50.50.png",
-    link: "https://fkrtt.in/en/6UolsT"
+    link: "https://amzn.to/41HptVa"
   },
   {
     id: 33,
