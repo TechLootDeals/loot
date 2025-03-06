@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://techlootdeals.github.io/loot/sitemap.xml
