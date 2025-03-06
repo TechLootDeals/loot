@@ -13,7 +13,7 @@ const trendingProducts = [
     description: "Experience high-quality sound with these top-rated wireless earbuds.",
     price: "1,299",
     image: "Screenshot 2025-03-01 18.28.42.png",
-    link: "https://amzn.to/4ijCvgN"
+    link: "https://bitlii.cc/en/8xTljt"
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const trendingProducts = [
     description: "Immerse yourself in music with advanced noise cancellation.",
     price: "3,499",
     image: "Screenshot 2025-03-01 18.37.02.png",
-    link: "https://amzn.to/4bFgnvz"
+    link: "https://bitlii.cc/en/Airr3S"
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const trendingProducts = [
     description: "Lowest price as a wristphone to monitor your health with this stylish android smart watch.",
     price: "4,999",
     image: "Screenshot 2025-03-01 18.38.49.png",
-    link: "https://amzn.to/4bsUwXR"
+    link: "https://bitlii.cc/en/2LlNbX"
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const trendingProducts = [
     description: "Portable Bluetooth speaker with powerful sound and deep bass.",
     price: "2,299",
     image: "Screenshot 2025-03-01 18.41.17.png",
-    link: "https://amzn.to/41zmjm9"
+    link: "https://bitlii.cc/en/i1TGPr"
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ const trendingProducts = [
     description: "High-capacity portable charger to keep your devices powered on the go.",
     price: "1,499",
     image: "Screenshot 2025-03-01 18.44.12.png",
-    link: "https://amzn.to/4bmyLZE"
+    link: "https://bitlii.cc/en/EC4PXU"
   },
   {
     id: 6,
@@ -53,7 +53,7 @@ const trendingProducts = [
     description: "Sleek and durable backpack designed for tech enthusiasts.",
     price: "1,799",
     image: "Screenshot 2025-03-01 18.47.02.png",
-    link: "https://amzn.to/4brfK8M"
+    link: "https://bitlii.cc/en/1mTpps"
   },
   {
     id: 7,
@@ -61,7 +61,7 @@ const trendingProducts = [
     description: "Expand your connectivity with this versatile USB-C hub.",
     price: "1,499",
     image: "Screenshot 2025-03-01 18.50.04.png",
-    link: "https://amzn.to/41EqsFq"
+    link: "https://bitlii.cc/en/dMwiW3"
   },
   {
     id: 8,
@@ -69,7 +69,7 @@ const trendingProducts = [
     description: "Smooth and responsive wireless mouse for everyday tasks.",
     price: "699",
     image: "Screenshot 2025-03-01 18.51.34.png",
-    link: "https://amzn.to/4ijVtnJ"
+    link: "https://bitlii.cc/en/8YxZCS"
   },
   {
     id: 9,
@@ -77,7 +77,7 @@ const trendingProducts = [
     description: "Enjoy a superior typing experience with this mechanical keyboard.",
     price: "2,599",
     image: "Screenshot 2025-03-01 18.54.09.png",
-    link: "https://amzn.to/3Xqe75k"
+    link: "https://bitlii.cc/en/0hHqld"
   },
   {
     id: 10,
@@ -85,7 +85,7 @@ const trendingProducts = [
     description: "Crystal clear video calls with this high-definition webcam.",
     price: "2,499",
     image: "Screenshot 2025-03-01 18.55.47.png",
-    link: "https://amzn.to/3QGhKjS"
+    link: "https://bitlii.cc/en/Gjtki3"
   },
   {
     id: 11,
@@ -93,7 +93,7 @@ const trendingProducts = [
     description: "Elevate your gaming with a high-resolution, fast refresh rate monitor.",
     price: "14,999",
     image: "Screenshot 2025-03-01 18.57.35.png",
-    link: "https://amzn.to/41CLgwY"
+    link: "https://bitlii.cc/en/vU6EtV"
   },
   {
     id: 12,
@@ -101,7 +101,7 @@ const trendingProducts = [
     description: "Enjoy vibrant colors and smart features with this LED TV.",
     price: "25,999",
     image: "Screenshot 2025-03-01 19.16.37.png",
-    link: "https://amzn.to/41jEOK5"
+    link: "https://bitlii.cc/en/WE5sOi"
   },
   {
     id: 13,
@@ -109,7 +109,7 @@ const trendingProducts = [
     description: "Stay ahead with the latest smartphone featuring cutting-edge technology.",
     price: "25,999",
     image: "Screenshot 2025-03-01 19.41.43.png",
-    link: "https://amzn.to/4bqiUJz"
+    link: "https://bitlii.cc/en/oH2VOH"
   },
   {
     id: 14,
@@ -117,7 +117,7 @@ const trendingProducts = [
     description: "Footrest & Cushion Combo, Filled with Beans",
     price: "2,039",
     image: "Screenshot 2025-03-01 19.26.47.png",
-    link: "https://amzn.to/3DemASa"
+    link: "https://bitlii.cc/en/v4scFy"
   },
   {
     id: 15,
@@ -125,7 +125,7 @@ const trendingProducts = [
     description: "Keep your home safe with this smart, easy-to-install security camera.",
     price: "3,099",
     image: "Screenshot 2025-03-01 19.35.38.png",
-    link: "https://amzn.to/3D0D9kE"
+    link: "https://bitlii.cc/en/BW7vcT"
   },
   {
     id: 16,
@@ -133,7 +133,7 @@ const trendingProducts = [
     description: "Capture stunning aerial footage with this easy-to-fly camera drone.",
     price: "16,999",
     image: "Screenshot 2025-03-01 19.45.25.png",
-    link: "https://amzn.to/4ijcVIW"
+    link: "https://bitlii.cc/en/oD0rDC"
   },
   {
     id: 17,
@@ -141,7 +141,7 @@ const trendingProducts = [
     description: "Efficient and stylish electric scooter for hassle-free commuting.",
     price: "26,999",
     image: "Screenshot 2025-03-01 19.52.42.png",
-    link: "https://amzn.to/4imXBuY"
+    link: "https://bitlii.cc/en/xPUI6N"
   },
   {
     id: 18,
@@ -149,7 +149,7 @@ const trendingProducts = [
     description: "Immerse yourself in virtual worlds with this advanced VR headset.",
     price: "8,999",
     image: "Screenshot 2025-03-01 19.55.31.png",
-    link: "https://amzn.to/3QJHZ93"
+    link: "https://bitlii.cc/en/RT3SyS"
   },
   {
     id: 19,
@@ -157,7 +157,7 @@ const trendingProducts = [
     description: "Portable and powerful tablet ideal for work and play.",
     price: "12,999",
     image: "Screenshot 2025-03-01 20.00.21.png",
-    link: "https://amzn.to/4gZW8K1"
+    link: "https://bitlii.cc/en/K8TfeW"
   },
   {
     id: 20,
@@ -165,7 +165,7 @@ const trendingProducts = [
     description: "Record adventures in stunning 4K resolution with this action camera.",
     price: "6,499",
     image: "Screenshot 2025-03-01 20.02.00.png",
-    link: "https://amzn.to/3QFZy9X"
+    link: "https://bitlii.cc/en/SZ1oEa"
   },
   {
     id: 21,
@@ -173,7 +173,7 @@ const trendingProducts = [
     description: "Control your home with voice commands using this smart assistant.",
     price: "3,999",
     image: "Screenshot 2025-03-01 19.17.59.png",
-    link: "https://amzn.to/4h7MuVJ"
+    link: "https://bitlii.cc/en/YPj8Tn"
   },
   {
     id: 22,
@@ -181,7 +181,7 @@ const trendingProducts = [
     description: "Boost your internet speed with this high-performance wireless router.",
     price: "2,199",
     image: "Screenshot 2025-03-01 20.03.54.png",
-    link: "https://amzn.to/3FbCQE0"
+    link: "https://bitlii.cc/en/IH4DQE"
   },
   {
     id: 23,
@@ -189,7 +189,7 @@ const trendingProducts = [
     description: "Fast and reliable external SSD for all your data storage needs.",
     price: "7,999",
     image: "Screenshot 2025-03-01 20.05.26.png",
-    link: "https://amzn.to/41E74sc"
+    link: "https://bitlii.cc/en/NV6Zut"
   },
   // Flipkart products (id > 23)
   {
@@ -198,7 +198,7 @@ const trendingProducts = [
     description: "Off road car: Electric brushed with four big driving wheels to run on smooth ground, sand and small hills",
     price: "1,599",
     image: "Screenshot 2025-03-01 19.48.12.png",
-    link: "https://amzn.to/41oYGLO"
+    link: "https://bitlii.cc/en/AycjN6"
   },
   {
     id: 25,
@@ -206,7 +206,7 @@ const trendingProducts = [
     description: "Ergonomic and stylish gaming chair designed for long sessions.",
     price: "11,000",
     image: "Screenshot 2025-03-01 20.07.15.png",
-    link: "https://amzn.to/4ioPjTj"
+    link: "https://bitlii.cc/en/3luOeO"
   },
   {
     id: 26,
@@ -214,7 +214,7 @@ const trendingProducts = [
     description: "Enhance your workspace comfort with this ergonomic office chair.",
     price: "7,999",
     image: "Screenshot 2025-03-01 20.08.50.png",
-    link: "https://amzn.to/3Xn34cT"
+    link: "https://bitlii.cc/en/Arpck8"
   },
   {
     id: 27,
@@ -222,7 +222,7 @@ const trendingProducts = [
     description: "Solar systems, DIY solar projects, and small solar setups for home and mobile charging.",
     price: "3,999",
     image: "Screenshot 2025-03-01 20.12.53.png",
-    link: "https://amzn.to/3F6bpf3"
+    link: "https://bitlii.cc/en/HKm9ci"
   },
   {
     id: 28,
@@ -246,7 +246,7 @@ const trendingProducts = [
     description: "Step up your sneaker game with the Smashic Women's Sneakers from PUMA",
     price: "2,499",
     image: "Screenshot 2025-03-01 20.27.51.png",
-    link: "https://amzn.to/3Fhx97x"
+    link: "https://bitlii.cc/en/xnfR0p"
   },
   {
     id: 31,
@@ -262,7 +262,7 @@ const trendingProducts = [
     description: "Verbal & non-verbal reasoning 47 videos, 1000+ solved examples",
     price: "1,250",
     image: "Screenshot 2025-03-01 19.50.50.png",
-    link: "https://amzn.to/41HptVa"
+    link: "https://bitlii.cc/en/7tNEgc"
   },
   {
     id: 33,
